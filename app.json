@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "docArchive",
+    "slug": "docarchive",
+    "version": "0.1.0",
+    "scheme": "docarchive",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "ro.docarchive.app"
+    },
+    "android": {
+      "package": "ro.docarchive.app",
+      "allowBackup": false,
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Selectează imagini pentru arhiva locală.",
+          "cameraPermission": "Fotografiază documente pentru arhiva locală.",
+          "microphonePermission": false
+        }
+      ],
+      "expo-sqlite",
+      "expo-sharing"
+    ]
+  }
+}
