@@ -8,6 +8,9 @@ export default function WebOfflineStatus() {
   const unsupported = process.env.NODE_ENV === 'production' &&
     typeof navigator !== 'undefined' && !('serviceWorker' in navigator);
   useEffect(() => {
+    document.documentElement.lang = archive.settings.language;
+  }, [archive.settings.language]);
+  useEffect(() => {
     if (process.env.NODE_ENV !== 'production') return;
     if (!('serviceWorker' in navigator)) return;
     void navigator.serviceWorker.register('/service-worker.js').catch((reason: unknown) => {
