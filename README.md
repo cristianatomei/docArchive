@@ -82,6 +82,8 @@ telefon compatibil. Acesta este un build de demonstrație cu semnare debug,
 **nu un pachet de producție pentru distribuție în magazin**.
 Disponibilitatea artefactului depinde de finalizarea jobului, nu doar de existența surselor.
 
+Planul de testare pe telefon: [docs/android-device-test-plan.md](docs/android-device-test-plan.md). CI poate fi pornit și manual (`workflow_dispatch`).
+
 Alternativ, cu un cont Expo și un proiect EAS configurat:
 
 ```bash
