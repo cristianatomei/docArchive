@@ -151,9 +151,12 @@ Recunoasterea unui rand nu garanteaza asocierea notei cu elevul potrivit.
 Digital Ink Recognition, care foloseste trasee de pix digital, nu trebuie confundat
 cu recunoasterea scrisului de mana din fotografii.
 
-Pentru MVP: text tiparit si metadate asistate; scrisul de mana se poate arhiva
-ca imagine cu indexare manuala. Automatizarea manuscriselor ramane o investigatie
-distincta daca acestea sunt majoritare.
+Utilizatorul a confirmat un amestec semnificativ de documente tiparite si scrise
+de mana. Propunerea pentru MVP foloseste doua cai: OCR asistat pe text tiparit,
+respectiv imagine originala cu indexare manuala pentru manuscrise. O pagina mixta
+poate avea text tiparit recunoscut si campuri manuscrise neconfirmate; nu o marcam
+integral ca fiind extrasa corect. Recunoasterea manuscriselor se evalueaza separat,
+fara sa conditioneze accesul la document sau salvarea datelor manuale.
 
 Proba tehnica trebuie sa compare diacriticele romanesti, nume, cifre, formulare,
 tabele, documente deteriorate si functionarea in mod avion.
@@ -240,8 +243,9 @@ Tintele numerice sunt ipoteze de discutat, nu rezultate deja masurate:
 
 ## 10. Decizii care necesita raspuns
 
-Prima intrebare: ce predomina in arhiva reala - documente tiparite, scrise de mana
-sau un amestec? Raspunsul modifica radical asteptarile si proba OCR.
+Confirmat de utilizator: arhiva contine un amestec semnificativ de documente
+tiparite si scrise de mana. Proba OCR trebuie sa raporteze separat rezultatele
+pentru aceste categorii si pentru pagini mixte.
 
 Ulterior se confirma, pe rand: un dispozitiv sau mai multe simultan; volumele
 actuale si anuale; cine opereaza; echipamentele; documentele prioritare;
