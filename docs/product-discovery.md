@@ -5,6 +5,14 @@ Data documentarii: 2026-10-29.
 Stare: propunere pentru discutie. Nu este o specificatie aprobata, o evaluare
 juridica sau o garantie privind precizia OCR.
 
+Actualizare implementare: exista acum un prototip functional, descris in
+README.md. Acest document pastreaza directia pe termen lung, nu o lista de
+functionalitati deja livrate. MVP-ul foloseste snapshot SQLite/IndexedDB si
+cautare in memorie, fara SQLCipher, index FTS sau criptare de fisiere.
+Interfata avertizeaza ca se folosesc exclusiv date fictive pana la implementarea
+protectiilor. OCR-ul nativ propriu foloseste ML Kit Latin inclus in APK pe Android
+si Vision pe iOS; validarea pe dispozitive este distincta de compilarea web.
+
 ## 1. Obiectiv si limite
 
 O arhiva scolara digitala in care personalul autorizat poate introduce,
