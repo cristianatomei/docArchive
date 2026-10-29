@@ -106,6 +106,20 @@ Locatia fizica poate contine fond/serie, inventar, raft, cutie, volum si pagina.
 Codul de clasificare si termenul de pastrare trebuie legate de nomenclatorul
 aprobat al institutiei, nu inventate din tipul documentului.
 
+### Prima felie implementata
+
+[Scenariul sintetic si schema SQLite v1](demo-scenario-school-6.md) concretizeaza
+institutia, anii scolari, sectiile configurabile I-VIII, elevii, inscrierile
+istorice, personalul si repartizarile pe discipline. Documentele au legaturi
+multiple catre ani, elevi si pagini. Transcrierile optionale de rezultate au
+sursa document/pagina si stare de verificare; nu reprezinta un catalog electronic.
+Datele de demonstratie sunt exclusiv sintetice. Testele folosesc SQLite din
+biblioteca standard Python; comanda este documentata in README.
+
+Restul modelului propus (fisiere originale/derivate, hash-uri, OCR, revizii,
+denumiri istorice si structuri arondate) nu este inca implementat. Baza de
+demonstratie nu implementeaza criptare sau controlul accesului.
+
 ## 5. Fluxuri UX
 
 Navigare propusa: Arhiva, Adauga, De verificat, Setari.
